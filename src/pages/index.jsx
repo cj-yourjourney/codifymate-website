@@ -38,18 +38,18 @@ const LandingPage = () => {
             className="w-16 h-16 mx-auto mb-6 rounded-lg"
           />
 
-          <h1 className="text-5xl font-bold mb-4 text-gray-900">CodifyMate</h1>
+          <h1 className="text-5xl font-bold mb-6 text-gray-900">CodifyMate</h1>
 
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            AI Code Assistant for Frontend Developers
-          </p>
+          <div className="mb-10">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Smart Vibe Coding
+            </h2>
+            <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              For Frontend Devs — Build Feature by Feature
+            </p>
+          </div>
 
-          <p className="text-gray-500 mb-12 max-w-xl mx-auto">
-            Desktop app that helps you refine prompts, find relevant files, and
-            generate better code with AI
-          </p>
-
-          <div className="space-x-4">
+          <div className="space-x-4 mb-6">
             <button
               onClick={handleDownload}
               className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
@@ -66,6 +66,47 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Approach Explanation */}
+      <section className="py-16 bg-blue-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900">
+            The Smart Way to Build
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+              <h3 className="font-semibold text-red-700 mb-2">
+                ❌ Other AI Tools
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                "Build me a complete e-commerce app"
+              </p>
+              <p className="text-xs text-gray-500">
+                Get everything at once, harder to customize
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg border-l-4 border-green-400">
+              <h3 className="font-semibold text-green-700 mb-2">
+                ✅ CodifyMate Way
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                "Create navbar component" → "Add product card" → "Build checkout
+                form"
+              </p>
+              <p className="text-xs text-gray-500">
+                Frontend components that fit your design system
+              </p>
+            </div>
+          </div>
+
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Perfect for frontend developers who want each component to match
+            their existing codebase and design patterns.
+          </p>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -73,7 +114,9 @@ const LandingPage = () => {
             <h2 className="text-3xl font-bold mb-4 text-gray-900">
               How It Works
             </h2>
-            <p className="text-gray-600">Three simple steps to better code</p>
+            <p className="text-gray-600">
+              Three simple steps to better code, one feature at a time
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
@@ -89,10 +132,11 @@ const LandingPage = () => {
                   1
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Refine Your Prompt
+                  Refine Your Component Request
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Get AI feedback to improve your prompt clarity and detail
+                  Get AI feedback to improve your prompt for components,
+                  styling, and JavaScript functionality
                 </p>
               </div>
             </div>
@@ -108,9 +152,12 @@ const LandingPage = () => {
                 <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">
                   2
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Select Files</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Select Project Files
+                </h3>
                 <p className="text-gray-600 text-sm">
-                  AI suggests relevant files to include for better context
+                  AI suggests relevant components, stylesheets, and config files
+                  to include for consistent code generation
                 </p>
               </div>
             </div>
@@ -127,10 +174,11 @@ const LandingPage = () => {
                   3
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Generate & Refine
+                  Generate Frontend Code
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Get high-quality code and iterate until perfect
+                  Get clean, modern components with proper styling,
+                  interactivity, and accessibility features
                 </p>
               </div>
             </div>
@@ -143,8 +191,11 @@ const LandingPage = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 text-gray-900">
-              Why Choose CodifyMate
+              Why Frontend Developers Choose CodifyMate
             </h2>
+            <p className="text-gray-600">
+              Built for React, Vue, vanilla JS, and modern frontend workflows
+            </p>
           </div>
 
           <div className="space-y-16">
@@ -152,19 +203,20 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Smart Prompt Enhancement
+                  Smart Component Prompting
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Transform vague ideas into clear, detailed prompts that
-                  generate exactly the code you need.
+                  Transform basic ideas into detailed prompts for components,
+                  hooks, and interactive elements across any frontend framework.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-400">
                   <p className="text-sm">
                     <span className="font-semibold">Before:</span> "Make a
                     button"
                     <br />
-                    <span className="font-semibold">After:</span> "Create a
-                    React button with TypeScript, variants, and accessibility"
+                    <span className="font-semibold">After:</span> "Create an
+                    interactive button with size variants and accessible focus
+                    states"
                   </p>
                 </div>
               </div>
@@ -181,16 +233,17 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Context-Aware Suggestions
+                  Frontend-Aware File Detection
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  AI automatically suggests which project files to include for
-                  better code generation.
+                  AI automatically suggests relevant components, stylesheets,
+                  and configuration files to ensure your new code integrates
+                  seamlessly.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-green-400">
                   <p className="text-sm">
                     <span className="font-semibold">Smart detection:</span>{' '}
-                    Components, styles, types, and config files
+                    Components, CSS/SCSS files, JavaScript modules, config files
                   </p>
                 </div>
               </div>
@@ -207,16 +260,17 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Continuous Refinement
+                  Production-Ready Components
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Iterate and improve your code through AI feedback until it
-                  meets your standards.
+                  Generate clean, maintainable components with proper styling,
+                  responsive design, and accessibility best practices built-in.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-purple-400">
                   <p className="text-sm">
-                    <span className="font-semibold">Improvements:</span>{' '}
-                    Performance, accessibility, and best practices
+                    <span className="font-semibold">Includes:</span> Modern
+                    JavaScript, responsive CSS, ARIA attributes, cross-browser
+                    compatibility
                   </p>
                 </div>
               </div>
@@ -236,10 +290,11 @@ const LandingPage = () => {
       <section className="py-20 bg-gray-900">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready to Get Started?
+            Ready to Build Better Frontend Components?
           </h2>
           <p className="text-gray-300 mb-8">
-            Join the beta and start generating better code today
+            Join frontend developers who build feature by feature with
+            CodifyMate
           </p>
 
           <div className="bg-white rounded-lg p-6 max-w-md mx-auto">
