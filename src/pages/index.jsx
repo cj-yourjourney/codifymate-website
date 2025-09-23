@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { LOGO_400_URL } from '@/shared/constants'
 
 // Working placeholder URLs
-const LOGO_URL =
-  'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=200&h=200&fit=crop&crop=center'
+const LOGO_URL = LOGO_400_URL
 const STEP_1_IMG =
   'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=500&h=300&fit=crop'
 const STEP_2_IMG =
@@ -35,21 +35,23 @@ const LandingPage = () => {
           <img
             src={LOGO_URL}
             alt="CodifyMate"
-            className="w-16 h-16 mx-auto mb-6 rounded-lg"
+            className="w-20 h-20 mx-auto mb-6 rounded-lg"
           />
 
-          <h1 className="text-5xl font-bold mb-6 text-gray-900">CodifyMate</h1>
+          <h1 className="text-5xl font-bold mb-8 text-gray-900">CodifyMate</h1>
 
           <div className="mb-10">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              Smart Vibe Coding
-            </h2>
-            <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              For Frontend Devs — Build Feature by Feature
+            <div className="inline-block bg-gradient-to-r from-blue-50 to-purple-50 rounded-full px-6 py-2 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-800">
+                Smart Vibe Coding
+              </h2>
+            </div>
+            <p className="text-lg text-gray-600 max-w-xl mx-auto">
+              For React Developers — Build Component by Component
             </p>
           </div>
 
-          <div className="space-x-4 mb-6">
+          <div className="space-x-4">
             <button
               onClick={handleDownload}
               className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
@@ -70,7 +72,7 @@ const LandingPage = () => {
       <section className="py-16 bg-blue-50">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold mb-6 text-gray-900">
-            The Smart Way to Build
+            The Smart Way to Build React Applications
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -79,10 +81,11 @@ const LandingPage = () => {
                 ❌ Other AI Tools
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                "Build me a complete e-commerce app"
+                "Build me a complete React e-commerce app"
               </p>
               <p className="text-xs text-gray-500">
-                Get everything at once, harder to customize
+                Get massive, hard-to-customize codebases with hundreds of
+                components at once
               </p>
             </div>
 
@@ -91,18 +94,20 @@ const LandingPage = () => {
                 ✅ CodifyMate Way
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                "Create navbar component" → "Add product card" → "Build checkout
-                form"
+                "Create LoginForm component" → "Build ProductCard" → "Add
+                ShoppingCart component"
               </p>
               <p className="text-xs text-gray-500">
-                Frontend components that fit your design system
+                Build React components step-by-step that fit your existing
+                codebase and design system
               </p>
             </div>
           </div>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Perfect for frontend developers who want each component to match
-            their existing codebase and design patterns.
+            Perfect for React developers who want each component to integrate
+            seamlessly with their existing project architecture and state
+            management.
           </p>
         </div>
       </section>
@@ -115,7 +120,7 @@ const LandingPage = () => {
               How It Works
             </h2>
             <p className="text-gray-600">
-              Three simple steps to better code, one feature at a time
+              Three simple steps to better React components, one at a time
             </p>
           </div>
 
@@ -132,11 +137,12 @@ const LandingPage = () => {
                   1
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Refine Your Component Request
+                  Refine Your React Component Request
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Get AI feedback to improve your prompt for components,
-                  styling, and JavaScript functionality
+                  Transform vague ideas like "make a button component" into
+                  precise prompts for production-ready React components with
+                  proper props and state management
                 </p>
               </div>
             </div>
@@ -153,11 +159,12 @@ const LandingPage = () => {
                   2
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Select Project Files
+                  Select Relevant React Files
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  AI suggests relevant components, stylesheets, and config files
-                  to include for consistent code generation
+                  AI intelligently suggests only the React components, hooks,
+                  context files, and stylesheets relevant to your current
+                  component scope
                 </p>
               </div>
             </div>
@@ -174,11 +181,11 @@ const LandingPage = () => {
                   3
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  Generate Frontend Code
+                  Generate Clean React Components
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Get clean, modern components with proper styling,
-                  interactivity, and accessibility features
+                  Get clean, focused React code with proper hooks, state
+                  management, TypeScript support, and modern React patterns
                 </p>
               </div>
             </div>
@@ -191,10 +198,11 @@ const LandingPage = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 text-gray-900">
-              Why Frontend Developers Choose CodifyMate
+              Why React Developers Choose CodifyMate
             </h2>
             <p className="text-gray-600">
-              Built for React, Vue, vanilla JS, and modern frontend workflows
+              Built specifically for React developers who build component by
+              component
             </p>
           </div>
 
@@ -203,20 +211,21 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Smart Component Prompting
+                  React-Focused Component Prompting
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Transform basic ideas into detailed prompts for components,
-                  hooks, and interactive elements across any frontend framework.
+                  Transform basic ideas into detailed prompts for React
+                  components with proper props, hooks, and state management
+                  patterns.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-400">
                   <p className="text-sm">
                     <span className="font-semibold">Before:</span> "Make a
-                    button"
+                    signup form"
                     <br />
-                    <span className="font-semibold">After:</span> "Create an
-                    interactive button with size variants and accessible focus
-                    states"
+                    <span className="font-semibold">After:</span> "Create a
+                    SignupForm component with validation hooks, error states,
+                    and TypeScript props"
                   </p>
                 </div>
               </div>
@@ -233,17 +242,18 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Frontend-Aware File Detection
+                  React-Aware File Detection
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  AI automatically suggests relevant components, stylesheets,
-                  and configuration files to ensure your new code integrates
-                  seamlessly.
+                  AI automatically suggests relevant React components, custom
+                  hooks, context providers, and CSS modules to ensure seamless
+                  integration.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-green-400">
                   <p className="text-sm">
                     <span className="font-semibold">Smart detection:</span>{' '}
-                    Components, CSS/SCSS files, JavaScript modules, config files
+                    React components, custom hooks, context files, CSS/SCSS
+                    modules, TypeScript types
                   </p>
                 </div>
               </div>
@@ -260,17 +270,18 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-4">
-                  Production-Ready Components
+                  Production-Ready React Components
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Generate clean, maintainable components with proper styling,
-                  responsive design, and accessibility best practices built-in.
+                  Generate clean, maintainable React components with modern
+                  hooks, proper TypeScript types, accessibility features, and
+                  responsive styling.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-purple-400">
                   <p className="text-sm">
-                    <span className="font-semibold">Includes:</span> Modern
-                    JavaScript, responsive CSS, ARIA attributes, cross-browser
-                    compatibility
+                    <span className="font-semibold">Includes:</span> React
+                    hooks, TypeScript support, ARIA attributes, responsive CSS,
+                    modern React patterns
                   </p>
                 </div>
               </div>
@@ -286,15 +297,68 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Component Examples */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              Build React Components Step-by-Step
+            </h2>
+            <p className="text-gray-600">
+              From simple UI elements to complex interactive components
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold mb-2">Authentication Components</h3>
+              <p className="text-sm text-gray-600">
+                LoginForm, SignupForm, ProtectedRoute
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold mb-2">Navigation Components</h3>
+              <p className="text-sm text-gray-600">
+                Navbar, Sidebar, BreadCrumbs
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold mb-2">Data Display</h3>
+              <p className="text-sm text-gray-600">
+                DataTable, ProductCard, UserProfile
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold mb-2">Interactive Elements</h3>
+              <p className="text-sm text-gray-600">
+                SearchBar, Pagination, Modal
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold mb-2">Form Components</h3>
+              <p className="text-sm text-gray-600">
+                ContactForm, FileUpload, FormValidation
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold mb-2">Layout Components</h3>
+              <p className="text-sm text-gray-600">
+                Dashboard, Grid, CardLayout
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready to Build Better Frontend Components?
+            Ready to Build React Components the Smart Way?
           </h2>
           <p className="text-gray-300 mb-8">
-            Join frontend developers who build feature by feature with
-            CodifyMate
+            Join React developers who build component by component with
+            CodifyMate—keeping complete control while leveraging AI assistance.
           </p>
 
           <div className="bg-white rounded-lg p-6 max-w-md mx-auto">
