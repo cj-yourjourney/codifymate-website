@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { LOGO_100_URL } from '../constants'
+
+
+
 
 const Navbar = () => {
   return (
@@ -11,11 +13,6 @@ const Navbar = () => {
     >
       <div className="navbar-start">
         <div className="flex items-center gap-2">
-          <img
-            className="rounded-full w-10 h-10"
-            src={LOGO_100_URL}
-            alt="Logo"
-          />
           <Link href="/" className="text-xl font-bold font-primary">
             CodifyMate
           </Link>

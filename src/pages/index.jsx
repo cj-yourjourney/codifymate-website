@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { LOGO_400_URL } from '@/shared/constants'
+
 
 // Working placeholder URLs
-const LOGO_URL = LOGO_400_URL
+
 const STEP_1_IMG =
   'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=500&h=300&fit=crop'
 const STEP_2_IMG =
   'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop'
 const STEP_3_IMG =
   'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop'
+
+const LOGO_URL = STEP_1_IMG  
 
 const LandingPage = () => {
   const [email, setEmail] = useState('')
@@ -32,11 +34,7 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <img
-            src={LOGO_URL}
-            alt="CodifyMate"
-            className="w-20 h-20 mx-auto mb-6 rounded-lg"
-          />
+         
 
           <h1 className="text-5xl font-bold mb-8 text-gray-900">CodifyMate</h1>
 
